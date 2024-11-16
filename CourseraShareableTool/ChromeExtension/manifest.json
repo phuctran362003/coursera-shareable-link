@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Coursera Shareable Link Tool",
+  "version": "1.0",
+  "description": "Generate shareable links for Coursera submissions.",
+  "permissions": [ "tabs", "activeTab", "scripting" ],
+  "host_permissions": [ "https://www.coursera.org/*" ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
